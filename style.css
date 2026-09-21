@@ -1,3 +1,14 @@
+/* /////////////////////////////////////////////// */
+/* /// OBS! Denna finns för att overridea flex /// */
+
+[hidden]{
+    display: none !important;
+}
+
+/* /////////////////////////////////////////////// */
+
+/* Resten är bara basic styling, inget märkvärdigt. */
+
 body{
     min-height: 100vh;
     background-image: url("Flugsvamp.jpg");
@@ -6,7 +17,7 @@ body{
     background-size: cover;
     overflow: hidden;
 }
-/* linear-gradient(to bottom, rgb(255, 240, 221), rgb(255, 224, 185));*/
+
 header{
     box-sizing: border-box;
     display: flex;
@@ -38,4 +49,33 @@ form{
 form > p{
     display: flex;
     justify-content: space-between;
+}
+#wrongDetails{
+    color: darkred;
+    margin-bottom: 0;
+}
+
+form > p > input[type="submit"]{
+    margin-left: auto;
+}
+
+section{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(255, 252, 248), rgb(255, 214, 159));
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+section > button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }

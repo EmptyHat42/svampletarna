@@ -12,20 +12,31 @@
         <h1>Svampletarna</h1>
     </header>
     <main>
-        <form method="post">
+        <form> <!-- Vårt formsobjekt. Tomt då vi ändå sköter all funktion via JS -->
             <h2>Logga In</h2>
+            <p id="wrongDetails" hidden>Felaktiga inloggningsuppgifter</p> <!-- Gömd som default, kommer fram vid fel inmatning -->
+            <!-- text input för användarnamn -->
             <p>
-                <label for="namn">Namn:</label>
-                <input type="text" id="namn" name="namn" placeholder="Namn">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" placeholder="Namn">
             </p>
+            <!-- text input för lösenord-->
             <p>
                 <label for="password">Lösenord:</label>
                 <input type="text" id="password" name="password" placeholder="Lösenord">
             </p>
             <p>
+                <!-- submit input för att spara data -->
                 <input type="submit" value="Logga In">
             </p>
         </form>
+        <section id="welcome" hidden> <!-- Gömd som default, kommer fram om användarnamn och lösenord stämmer när vi trycker på submit-->
+            <h2></h2> <!-- Denna är tom då jag lägger till text via JS. Detta för att stämma överens med name input -->
+            <p>Om du vill logga ut så tryck nedan. <br><br>
+               Din info sparas inte om du loggar ut och du behöver logga in igen.
+            </p>
+            <button>Logga Ut</button> <!-- Knapp för att logga ut och ta bort localStorage data. -->
+        </section>
     </main>
     
 </body>
