@@ -1,0 +1,41 @@
+body{
+    min-height: 100vh;
+    background-image: url("Flugsvamp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+/* linear-gradient(to bottom, rgb(255, 240, 221), rgb(255, 224, 185));*/
+header{
+    box-sizing: border-box;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(255, 252, 248), rgb(255, 214, 159));;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(255, 252, 248), rgb(255, 214, 159));
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+form > p{
+    display: flex;
+    justify-content: space-between;
+}
