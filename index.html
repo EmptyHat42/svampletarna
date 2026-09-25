@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svampletarna</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Custom google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -17,17 +22,18 @@
             <p id="wrongDetails" hidden>Felaktiga inloggningsuppgifter</p> <!-- Gömd som default, kommer fram vid fel inmatning -->
             <!-- text input för användarnamn -->
             <p>
-                <label for="name">Namn:</label>
+                <label for="name">Namn</label>
                 <input type="text" id="name" name="name" placeholder="Namn">
             </p>
             <!-- text input för lösenord-->
             <p>
-                <label for="password">Lösenord:</label>
+                <label for="password">Lösenord</label>
                 <input type="password" id="password" name="password" placeholder="Lösenord">
             </p>
             <p>
                 <!-- submit input för att spara data -->
                 <input type="submit" value="Logga In">
+                
             </p>
         </form>
         <section id="welcome" hidden> <!-- Gömd som default, kommer fram om användarnamn och lösenord stämmer när vi trycker på submit-->
@@ -37,7 +43,11 @@
             </p>
             <button>Logga Ut</button> <!-- Knapp för att logga ut och ta bort localStorage data. -->
         </section>
+        <div class="mush-bot"></div> <!-- Div enbart kosmetisk -->
+
     </main>
-    
+    <footer>
+        <p> &copy; Tomas Wetterlid 2026</p> 
+    </footer>
 </body>
 </html>
